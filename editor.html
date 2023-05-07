@@ -3,14 +3,43 @@
     <head>
         <title>Create your masterpiece</title>
 
-        <!--nav bar-->        
-        <a href="home.html">Home</a>&nbsp;&nbsp;
-        <a href="categories.html">Categories</a>&nbsp;&nbsp;
-        <a href="writeyourstory.html">Write Your Story</a>&nbsp;&nbsp;
-        <a href="help.html">Help</a>&nbsp;&nbsp;
-        <a href="myprofile.html">My Profile</a>
+        <!--css stylesheet-->
+        <link rel="stylesheet" href="stylesheet.css">
+
+        <!--google fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,500&display=swap" rel="stylesheet">
+
+        <!--imported icons-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
+        <div class="wrapper">
+            <!--website logo-->
+            <div id="logo">immersed</div>
+
+            <!--settings button: imported-->
+            <div class="wrapper">
+                <div class="settings-container">
+                    <button class="settings">
+                        <!--<div class="settings-hov">-->
+                            <i class="fa fa-gear"><span class="settings-title">settings</span></i>
+                        <!--</div>-->
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!--nav bar-->
+        <nav class="navbar">
+            <a href="home.html">Home</a>
+            <a href="categories.html">Categories</a>
+            <a href="writeyourstory.html" class="active">Write Your Story</a>
+            <a href="help.html">Help</a>
+            <a href="myprofile.html">My Profile</a>
+        </nav>
+
+
+        <!--main content-->
         <!--allowing users to upload cover image-->
         <h3>Upload cover image</h3>
         <div>

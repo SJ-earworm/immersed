@@ -3,47 +3,85 @@
     <head>
         <title>My Profile</title>
 
-        <!--nav bar-->        
-        <a href="home.html">Home</a>&nbsp;&nbsp;
-        <a href="categories.html">Categories</a>&nbsp;&nbsp;
-        <a href="writeyourstory.html">Write Your Story</a>&nbsp;&nbsp;
-        <a href="help.html">Help</a>&nbsp;&nbsp;
-        <a href="myprofile.html">My Profile</a>
+        <!--css stylesheet-->
+        <link rel="stylesheet" href="stylesheet.css">
+
+        <!--google fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,500&display=swap" rel="stylesheet">
+
+        <!--imported icons-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-        <div>
-            <img src="profile pic here.png" alt="image loading" width="100" height="100">
-            <h1></h1> <!--user's displayed name here-->
-            <h3></h3> <!--user's username here-->
+        <div class="wrapper">
+            <!--website logo-->
+            <div id="logo">immersed</div>
+
+            <!--settings button: imported-->
+            <div class="wrapper">
+                <div class="settings-container">
+                    <button class="settings">
+                        <!--<div class="settings-hov">-->
+                            <i class="fa fa-gear"><span class="settings-title">settings</span></i>
+                        <!--</div>-->
+                    </button>
+                </div>
+            </div>
+        </div>
+
+       <!--nav bar-->
+        <nav class="navbar">
+            <a href="home.html">Home</a>
+            <a href="categories.html">Categories</a>
+            <a href="writeyourstory.html">Write Your Story</a>
+            <a href="help.html">Help</a>
+            <a href="myprofile.html" class="active">My Profile</a>
+        </nav>
+
+
+        <!--main content-->
+        <div class="wrapper" style="justify-content: center; margin: 7% 0;">
+            <img src="profile pic here.png" alt="image loading" width="150" height="150">
+            <div>
+                <div style="font-size: 50px; padding-top: 29px; padding-left: 25px;">User's name here</div> <!--user's displayed name here-->
+                <div style="font-size: 20px; padding-left: 28px; padding-top: 9px">@usernamehere</div> <!--user's username here-->
+            </div>
 
             <!--allowing user to edit profile details-->
             <a href="">
-                <button>Edit</button>
+                <button class="button" style="margin: 50% 50%;">Edit</button>
             </a>
         </div>
 
+
         <!--user's original stories-->
         <h2>My Stories</h2>
-        <a href="">
-            <button>
-                <img src="insert book here.png" alt="insert book here" width="150" height="200">
-            </button>
-        </a><br/><br/>
+        <div class="profile-book-container">
+            <a href="">
+                <button>
+                    <img src="insert book here.png" alt="insert book here" width="150" height="200">
+                </button>
+            </a>
+        </div>
         
         <!--user's favourited books-->
         <h2>My Favourites</h2>
-        <a href=""> <!--link to the book here pls-->
-            <button>
-                <img src="insert book here.png" alt="insert book here" width="150" height="200">
-            </button>
-        </a><br/><br/>
+        <div class="profile-book-container">
+            <a href=""> <!--link to the book here pls-->
+                <button>
+                    <img src="insert book here.png" alt="insert book here" width="150" height="200">
+                </button>
+            </a><br/><br/>
+        </div>
 
         <!--user's read later list-->
         <h2>Read Later</h2>
-        <a href="">
-            <button>
-                <img src="insert book here.png" alt="insert book here" width="150" height="200">
-            </button>
-        </a>
+        <div class="profile-book-container">
+            <a href="">
+                <button>
+                    <img src="insert book here.png" alt="insert book here" width="150" height="200">
+                </button>
+            </a>
+        </div>
     </body>
 </html>
