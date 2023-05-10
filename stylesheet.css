@@ -1,0 +1,214 @@
+body {
+    background-image: url(whitebg.jpg);
+    margin: 0 250px 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body::-webkit-scrollbar {   /*styling scrollbar background bar*/
+    width: 5px;
+    background-color: whitesmoke;
+  }
+
+body::-webkit-scrollbar-thumb {     /*styling scrollbar draggable button*/
+    background-color: black;
+    border-radius: 5px;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 58px;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 50px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+input[type=text] {          /*styling the form text box*/
+    padding: 10px 50px;
+    margin: 2px 0;
+    border: 1px solid rgba(0, 0, 0, 0.619);
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+input[type=email] {         /*styling the form text box*/
+    padding: 10px 50px;
+    margin: 2px 0;
+    border: 1px solid rgba(0, 0, 0, 0.619);
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+input[type=password] {      /*styling the form text box*/
+    padding: 10px 50px;
+    margin: 2px 0;
+    border: 1px solid rgba(0, 0, 0, 0.619);
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+input::placeholder {
+    color: black;
+}
+
+form {
+    margin: 0 auto;
+    width: 250px;
+}
+
+button:hover {
+    cursor: pointer;    /*changing the cursor to the finger thing*/
+}
+
+details {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 70px;
+    background-color: black;
+    color: whitesmoke;
+}
+
+summary {
+    position: relative;
+    margin-left: 30px;
+    top: 30%;
+    font-size: 23px;
+}
+
+.wrapper {
+    display: flex;  /*to fit stuff in the same line*/
+}
+
+.navbar {
+    margin-left: auto;          /*centering the*/
+    margin-right: auto;         /*navigation bar*/
+    box-sizing: border-box;
+    background-color: black;
+    width: 100%;
+    overflow: auto;
+    border-radius: 30px;
+}
+
+.navbar a{
+    box-sizing: border-box;
+    float: left;
+    padding: 20px 30px;
+    width: 20%;
+    color: whitesmoke;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 14px;
+}
+
+.navbar a:hover {
+    background-color: rgba(245, 245, 245, 0);
+    color: rgb(159, 159, 159);
+}
+
+.navbar a.active {
+    background-color: whitesmoke;
+    color: black;
+    text-decoration: none;
+}
+
+.settings-container {   /*come back here thx*/
+    position: relative;
+    margin-top: 40px;
+    right: 16%;
+    width: 17%;
+    height: 10%;
+    border-radius: 70px;
+}
+
+.settings{
+    border: none;
+    padding: 0 15px;
+    overflow: hidden;
+    right: -70%;
+    font-size: 60px;    /*adjusting size of icon*/
+    height: auto;
+    background-color: rgba(218, 218, 218, 0);
+    border-radius: 40px;
+    transition: 0.5s;   /*for slide animation*/
+}
+
+.settings-title {
+    padding: 16px 15px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 27px;
+}
+
+.settings, .settings-title {
+    position: absolute;
+}
+
+.settings:hover {
+    padding-right: 160px;
+    background-color: gainsboro;
+}
+
+.button {
+    background-color: black;
+    color: whitesmoke;
+    border: none;
+    padding: 12px 32px;
+    border-radius: 40px;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;;
+}
+
+.button:hover {
+    background-color: whitesmoke;
+    color: black;
+}
+
+.book-button{   /*it's working now yay*/
+    padding: 95px 20px;
+    margin: 0 15px;
+    border: 1px solid grey;
+}
+
+.book-button:hover {
+    background-color: snow;
+    border: 1px solid grey;
+}
+
+.profile-book-container {
+    position: relative;
+    overflow: auto;
+    height: 200px;
+}
+
+.profile-book-container::-webkit-scrollbar {
+    width: 5px;
+    background-color: whitesmoke;
+}
+
+.profile-book-container::-webkit-scrollbar-thumb {
+    background-color: black;
+    border-radius: 5px;
+}
+
+#logo {
+    margin: 30px 0;
+    margin-left: auto;      /*these two settles the centering problem*/
+    margin-right: auto;     /*instead of justify content*/
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 65px;
+}
+
+#logo-login-signup {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 40px;
+    margin-top: 27px;
+    margin-left: -190px;
+}

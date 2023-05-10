@@ -1,3 +1,2 @@
 # immersed
-
-1st commit - general layout of website using html
+2nd commit - css + settings button & help.html details <summary> (style only) added (style only)
