@@ -1,2 +1,25 @@
 # immersed
-2nd commit - css + settings button & help.html details <summary> (style only) added (style only)
+
+
+<h2>Commit history</h2>
+<h3>1st commit: HTML </h3>
+<ul>
+  <li>general layout of website using html</li>
+</ul>
+
+<h3>2nd commit: CSS </h3>
+<ul>
+  <li>css + settings button added</li>
+</ul>
+
+<h3>3rd commit: CSS </h3>
+<ul>
+  <li>fixed the dropdown display of the FAQs in help.html</li>
+  <li>added more FAQ questions</li>
+  <li>changed blacks to a much darker shade of grey</li>
+  <li>renamed "categories.html" to "read.html"</li>
+  <li>changed the layout & functionality for read.html</li>
+  <li>added dedicated html pages for each book genre</li>
+  <li>tweaked the design for the navigation bar</li>
+  <li>removed some redundant css code</li>
+</ul>
