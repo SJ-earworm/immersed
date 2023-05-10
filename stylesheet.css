@@ -17,19 +17,24 @@ body::-webkit-scrollbar-thumb {     /*styling scrollbar draggable button*/
 h1 {
     font-weight: bold;
     font-size: 58px;
+    color: rgb(29, 29, 29);
 }
 
 h2 {
     font-weight: bold;
     font-size: 50px;
+    color: rgb(29, 29, 29);
 }
 
 h3 {
     font-size: 30px;
+    color: rgb(29, 29, 29);
 }
 
 input[type=text] {          /*styling the form text box*/
-    padding: 10px 50px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 80px;
     margin: 2px 0;
     border: 1px solid rgba(0, 0, 0, 0.619);
     border-radius: 20px;
@@ -37,7 +42,9 @@ input[type=text] {          /*styling the form text box*/
 }
 
 input[type=email] {         /*styling the form text box*/
-    padding: 10px 50px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 80px;
     margin: 2px 0;
     border: 1px solid rgba(0, 0, 0, 0.619);
     border-radius: 20px;
@@ -45,7 +52,9 @@ input[type=email] {         /*styling the form text box*/
 }
 
 input[type=password] {      /*styling the form text box*/
-    padding: 10px 50px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 80px;
     margin: 2px 0;
     border: 1px solid rgba(0, 0, 0, 0.619);
     border-radius: 20px;
@@ -69,53 +78,63 @@ details {
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    width: 90%;
-    height: 70px;
-    background-color: black;
+    padding: 5px 10px;
+    background-color: rgb(29, 29, 29);
     color: whitesmoke;
+    cursor: pointer;
 }
 
 summary {
-    position: relative;
-    margin-left: 30px;
-    top: 30%;
+    padding: 20px;
     font-size: 23px;
+}
+
+p {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .wrapper {
     display: flex;  /*to fit stuff in the same line*/
 }
 
+.help-description {
+    margin-top: 0;
+    margin-left: 43px;
+    margin-right: 43px;
+    margin-bottom: 25px;
+    text-align: justify;
+}
+
 .navbar {
-    margin-left: auto;          /*centering the*/
-    margin-right: auto;         /*navigation bar*/
     box-sizing: border-box;
-    background-color: black;
     width: 100%;
-    overflow: auto;
-    border-radius: 30px;
+    overflow: hidden;
+    border: 3px solid rgb(29, 29, 29);
+    border-radius: 0 35px;
 }
 
 .navbar a{
     box-sizing: border-box;
     float: left;
-    padding: 20px 30px;
+    padding: 20px 0px;
     width: 20%;
+    background-color: rgb(29, 29, 29);
     color: whitesmoke;
     text-align: center;
     text-decoration: none;
     font-family: 'Roboto Mono', monospace;
     font-size: 14px;
+    transition: 0.2s;
 }
 
 .navbar a:hover {
-    background-color: rgba(245, 245, 245, 0);
+    background-color: rgb(29, 29, 29);
     color: rgb(159, 159, 159);
 }
 
 .navbar a.active {
-    background-color: whitesmoke;
-    color: black;
+    background-color: rgba(245, 245, 245, 0);
+    color: rgb(29, 29, 29);
     text-decoration: none;
 }
 
@@ -148,6 +167,7 @@ summary {
 
 .settings, .settings-title {
     position: absolute;
+    color: rgb(29, 29, 29);
 }
 
 .settings:hover {
@@ -156,7 +176,7 @@ summary {
 }
 
 .button {
-    background-color: black;
+    background-color: rgb(29, 29, 29);
     color: whitesmoke;
     border: none;
     padding: 12px 32px;
@@ -170,15 +190,96 @@ summary {
     color: black;
 }
 
-.book-button{   /*it's working now yay*/
+.book-search-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 80px 0;
+}
+
+.book-search {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.book-search i {
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 50px;
+    font-size: 45px;
+    color: rgb(64, 64, 64);
+}
+
+.book-search input {
+    padding: 30px 0;
+    padding-right: 170px;
+    padding-left: 110px;
+    background-color: rgba(29, 29, 29, 0);
+    font-size: 30px;    /*placeholder font size*/
+    border: 5px solid rgb(64, 64, 64);
+    border-radius: 60px;
+    transition: 0.2s;
+}
+
+.book-search input:hover {
+    background-color: rgba(49, 49, 49, 0.134);
+}
+
+.book-search input::placeholder {
+    overflow: visible;
+    color: rgb(64, 64, 64);
+}
+
+.book-button{
     padding: 95px 20px;
     margin: 0 15px;
     border: 1px solid grey;
+    transition: 0.2s;
 }
 
 .book-button:hover {
     background-color: snow;
     border: 1px solid grey;
+}
+
+.genre-selection-container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20%;
+}
+
+.genre-selection {
+    margin: 1%;
+    width: 30%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    border: 3px solid grey;
+    transition: 0.2s;
+}
+
+.genre-selection h2 {
+    font-size: 32px;
+    color: rgb(64, 64, 64);
+}
+
+.genre-selection:hover {
+    background-color: rgba(49, 49, 49, 0.134);
+}
+
+.profile-pic-container {
+    width: 140px;
+    height: 140px;
+    border: 2px solid rgb(29, 29, 29);
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+.profile-pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /*making the photo fit nicely inside the container w/o destroying the aspect ratio*/
 }
 
 .profile-book-container {
@@ -204,11 +305,13 @@ summary {
     text-align: center;
     font-family: 'Roboto Mono', monospace;
     font-size: 65px;
+    color: rgb(29, 29, 29);
 }
 
 #logo-login-signup {
     font-family: 'Roboto Mono', monospace;
     font-size: 40px;
+    color: rgb(29, 29, 29);
     margin-top: 27px;
     margin-left: -190px;
 }
