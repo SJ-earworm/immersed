@@ -20,6 +20,6 @@
   <li>renamed "categories.html" to "read.html"</li>
   <li>changed the layout & functionality for read.html</li>
   <li>added dedicated html pages for each book genre</li>
-  <li>tweaked the design for the navigation bar</li>
+  <li>tweaked the design of the navigation bar</li>
   <li>removed some redundant css code</li>
 </ul>
