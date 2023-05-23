@@ -1,3 +1,10 @@
+/*Google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,500&display=swap');
+
+
+
+/*website-wide styles*/
+
 body {
     background-image: url(whitebg.jpg);
     margin: 0 250px 20px;
@@ -29,80 +36,6 @@ h2 {
 h3 {
     font-size: 30px;
     color: rgb(29, 29, 29);
-}
-
-input[type=text] {          /*styling the form text box*/
-    padding: 10px;
-    padding-left: 20px;
-    padding-right: 80px;
-    margin: 2px 0;
-    border: 1px solid rgba(0, 0, 0, 0.619);
-    border-radius: 20px;
-    box-sizing: border-box;
-}
-
-input[type=email] {         /*styling the form text box*/
-    padding: 10px;
-    padding-left: 20px;
-    padding-right: 80px;
-    margin: 2px 0;
-    border: 1px solid rgba(0, 0, 0, 0.619);
-    border-radius: 20px;
-    box-sizing: border-box;
-}
-
-input[type=password] {      /*styling the form text box*/
-    padding: 10px;
-    padding-left: 20px;
-    padding-right: 80px;
-    margin: 2px 0;
-    border: 1px solid rgba(0, 0, 0, 0.619);
-    border-radius: 20px;
-    box-sizing: border-box;
-}
-
-input::placeholder {
-    color: black;
-}
-
-form {
-    margin: 0 auto;
-    width: 250px;
-}
-
-button:hover {
-    cursor: pointer;    /*changing the cursor to the finger thing*/
-}
-
-details {
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 5px 10px;
-    background-color: rgb(29, 29, 29);
-    color: whitesmoke;
-    cursor: pointer;
-}
-
-summary {
-    padding: 20px;
-    font-size: 23px;
-}
-
-p {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.wrapper {
-    display: flex;  /*to fit stuff in the same line*/
-}
-
-.help-description {
-    margin-top: 0;
-    margin-left: 43px;
-    margin-right: 43px;
-    margin-bottom: 25px;
-    text-align: justify;
 }
 
 .navbar {
@@ -175,6 +108,14 @@ p {
     background-color: gainsboro;
 }
 
+button:hover {
+    cursor: pointer;    /*changing the cursor to the finger thing*/
+}
+
+.wrapper {
+    display: flex;  /*to fit stuff in the same line*/
+}
+
 .button {
     background-color: rgb(29, 29, 29);
     color: whitesmoke;
@@ -182,13 +123,95 @@ p {
     padding: 12px 32px;
     border-radius: 40px;
     text-align: center;
-    font-family: 'Roboto Mono', monospace;;
+    font-family: 'Roboto Mono', monospace;
+    transition: 0.2s;
 }
 
 .button:hover {
     background-color: whitesmoke;
     color: black;
 }
+
+.book-button{
+    padding: 95px 20px;
+    margin: 0 15px;
+    border: 1px solid grey;
+    transition: 0.2s;
+}
+
+.book-button:hover {
+    background-color: snow;
+    border: 1px solid grey;
+}
+
+#logo {
+    margin: 30px 0;
+    margin-left: auto;      /*these two settles the centering problem*/
+    margin-right: auto;     /*instead of justify content*/
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 65px;
+    color: rgb(29, 29, 29);
+}
+
+#logo-login-signup {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 40px;
+    color: rgb(29, 29, 29);
+    margin-top: 27px;
+    margin-left: -190px;
+}
+
+
+
+
+
+/*login.html & signup.html*/
+
+input[type=text] {          /*styling the form text box*/
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 80px;
+    margin: 2px 0;
+    border: 1px solid rgba(0, 0, 0, 0.619);
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+input[type=email] {         /*styling the form text box*/
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 80px;
+    margin: 2px 0;
+    border: 1px solid rgba(0, 0, 0, 0.619);
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+input[type=password] {      /*styling the form text box*/
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 80px;
+    margin: 2px 0;
+    border: 1px solid rgba(0, 0, 0, 0.619);
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+input::placeholder {
+    color: black;
+}
+
+form {
+    margin: 0 auto;
+    width: 250px;
+}
+
+
+
+
+
+/*read.html*/
 
 .book-search-container {
     position: relative;
@@ -197,7 +220,7 @@ p {
     margin: 80px 0;
 }
 
-.book-search {
+.book-search {  /*styling the search bar*/
     margin-left: auto;
     margin-right: auto;
 }
@@ -230,18 +253,6 @@ p {
     color: rgb(64, 64, 64);
 }
 
-.book-button{
-    padding: 95px 20px;
-    margin: 0 15px;
-    border: 1px solid grey;
-    transition: 0.2s;
-}
-
-.book-button:hover {
-    background-color: snow;
-    border: 1px solid grey;
-}
-
 .genre-selection-container {
     width: 80%;
     margin-left: auto;
@@ -267,7 +278,78 @@ p {
     background-color: rgba(49, 49, 49, 0.134);
 }
 
-.profile-pic-container {
+
+
+
+
+/*editor.html*/
+input[type=file] {  /*hiding the "premitive" button design*/
+    display: none;
+}
+
+label { /*styling the label as a button*/
+    background-color: rgb(29, 29, 29);
+    color: whitesmoke;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 17px;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 35px;
+    position: relative;
+    transition: 0.2s;
+}
+
+label:hover {
+    background-color: whitesmoke;
+    color: black;
+}
+
+textarea {
+    position: relative;
+    padding: 45%;
+    /*continue styling textarea haiz*/
+}
+
+
+
+
+
+/*help.html*/
+
+details {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px 10px;
+    background-color: rgb(29, 29, 29);
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+summary {
+    padding: 20px;
+    font-size: 23px;
+}
+
+p {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.help-description {
+    margin-top: 0 30px;
+    margin-left: 43px;
+    margin-right: 43px;
+    margin-bottom: 25px;
+    text-align: justify;
+}
+
+
+
+
+
+/*myprofile.html*/
+
+.profile-pic-container {    /*profile picture frame for myprofile.html*/
     width: 140px;
     height: 140px;
     border: 2px solid rgb(29, 29, 29);
@@ -276,13 +358,13 @@ p {
     overflow: hidden;
 }
 
-.profile-pic {
+.profile-pic {  /*profile picture configuration for myprofile.html*/
     width: 100%;
     height: 100%;
     object-fit: cover; /*making the photo fit nicely inside the container w/o destroying the aspect ratio*/
 }
 
-.profile-book-container {
+.profile-book-container {   /*container for books displayed in myprofile.html*/
     position: relative;
     overflow: auto;
     height: 200px;
@@ -296,22 +378,4 @@ p {
 .profile-book-container::-webkit-scrollbar-thumb {
     background-color: black;
     border-radius: 5px;
-}
-
-#logo {
-    margin: 30px 0;
-    margin-left: auto;      /*these two settles the centering problem*/
-    margin-right: auto;     /*instead of justify content*/
-    text-align: center;
-    font-family: 'Roboto Mono', monospace;
-    font-size: 65px;
-    color: rgb(29, 29, 29);
-}
-
-#logo-login-signup {
-    font-family: 'Roboto Mono', monospace;
-    font-size: 40px;
-    color: rgb(29, 29, 29);
-    margin-top: 27px;
-    margin-left: -190px;
 }

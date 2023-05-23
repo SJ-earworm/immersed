@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Create your masterpiece</title>
 
         <!--css stylesheet-->
@@ -40,9 +42,11 @@
         <!--main content-->
         <!--allowing users to upload cover image-->
         <h3>Upload cover image</h3>
-        <div>
-            <input type="file" name="img" accept="image/*">
-        </div><br/><br/>
+        <!--styling the file upload button-->
+        <input type="file" name="img" id="coverimg" accept="image/*">
+        <label for="coverimg">
+            Choose a photo
+        </label>
 
         <!--allowing users to write their story-->
         <div>
@@ -51,10 +55,10 @@
 
         <!--uploading or drafting their story-->
         <a href="">
-            <button type="submit">Upload</button>
-        </a>
+            <button type="submit" class="button">Upload</button>
+        </a> &nbsp;&nbsp;
         <a href="">
-            <button type="submit">Save to drafts</button>
+            <button type="submit" class="button">Save to drafts</button>
         </a>
 
     </body>
