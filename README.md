@@ -30,3 +30,8 @@
   <li>tidied up stylesheet.css: categorised codes</li>
   <li>added css to editor.html input tags & buttons (incomplete)</li>
 </ul>
+
+<h3>4th commit: JavaScript</h3>
+<ul>
+  <li>added some JavaScript</li>
+</ul>
