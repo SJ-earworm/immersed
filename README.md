@@ -31,7 +31,7 @@
   <li>added css to editor.html input tags & buttons (incomplete)</li>
 </ul>
 
-<h3>4th commit: JavaScript</h3>
+<h3>5th commit: JavaScript</h3>
 <ul>
   <li>added some JavaScript</li>
 </ul>
