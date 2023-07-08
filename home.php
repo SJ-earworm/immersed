@@ -3,8 +3,8 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Create your masterpiece</title>
-
+        <title>Immersed: Enter a New World</title>
+        
         <!--css stylesheet-->
         <link rel="stylesheet" href="stylesheet.css">
 
@@ -31,35 +31,23 @@
 
         <!--nav bar-->
         <nav class="navbar">
-            <a href="home.html">Home</a>
-            <a href="read.html">Read</a>
-            <a href="writeyourstory.html" class="active">Write Your Story</a>
-            <a href="help.html">Help</a>
-            <a href="myprofile.html">My Profile</a>
+            <a href="home.php" class="active">Home</a>
+            <a href="read.php">Read</a>
+            <a href="writeyourstory.php">Write Your Story</a>
+            <a href="help.php">Help</a>
+            <a href="myprofile.php">My Profile</a>
         </nav>
 
 
         <!--main content-->
-        <!--allowing users to upload cover image-->
-        <h3>Upload cover image</h3>
-        <!--styling the file upload button-->
-        <input type="file" name="img" id="coverimg" accept="image/*">
-        <label for="coverimg">
-            Choose a photo
-        </label>
-
-        <!--allowing users to write their story-->
-        <div>
-            <textarea name="story" placeholder="Create your masterpiece"></textarea>
-        </div>
-
-        <!--uploading or drafting their story-->
+        <h1>Immerse yourself & <br/> let your imagination go wild.</h1>
+        <br/><br/>
+        <h2>Featured Stories</h2>
+        <!--featured books here-->
         <a href="">
-            <button type="submit" class="button">Upload</button>
-        </a> &nbsp;&nbsp;
-        <a href="">
-            <button type="submit" class="button">Save to drafts</button>
+            <button>
+                <img src="insert book here.png" alt="insert book here" width="150" height="200">
+            </button>
         </a>
-
     </body>
 </html>

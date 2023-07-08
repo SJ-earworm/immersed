@@ -12,32 +12,33 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-        <div class="wrapper">
+    <div class="wrapper">
             <!--website logo-->
             <div id="logo">immersed</div>
 
             <!--settings button: imported-->
-            <div class="wrapper">
-                <div class="settings-container">
-                    <button class="settings">
-                        <i class="fa fa-gear"><span class="settings-title">settings</span></i>
-                        <!--<div class="dropdown-content">
-                            <a href="">dark mode</a>
-                            <a href="">log out</a>
-                        </div>-->
-                    </button>
-                    
+            <div class="settings-container">
+                <!--<div class="settings-dropdown-pos">-->
+                <button onclick="settingsClickFunction()" class="settings">
+                    <i class="fa fa-gear"></i>
+                    <span class="settings-title">settings</span>
+                </button>
+                <div class="settings-dropdown-pos">
+                    <div id="clickDropdown" class="settings-dropdown-content">
+                        <a href="">dark mode</a>
+                        <a href="">log out</a>
+                    </div>
                 </div>
             </div>
         </div>
 
        <!--nav bar-->
         <nav class="navbar">
-            <a href="home.html">Home</a>
-            <a href="read.html">Read</a>
-            <a href="writeyourstory.html">Write Your Story</a>
-            <a href="help.html">Help</a>
-            <a href="myprofile.html" class="active">My Profile</a>
+            <a href="home.php">Home</a>
+            <a href="read.php">Read</a>
+            <a href="writeyourstory.php">Write Your Story</a>
+            <a href="help.php">Help</a>
+            <a href="myprofile.php" class="active">My Profile</a>
         </nav>
 
 
@@ -87,5 +88,10 @@
                 </button>
             </a>
         </div>
+
+
+
+        <!--javascript-->
+        <script src="myScript.js"></script>
     </body>
 </html>

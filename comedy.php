@@ -1,10 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Immersed: Enter a New World</title>
-        
+        <title>Browse Categories</title>
+
         <!--css stylesheet-->
         <link rel="stylesheet" href="stylesheet.css">
 
@@ -13,6 +11,7 @@
 
         <!--imported icons-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     </head>
     <body>
         <div class="wrapper">
@@ -31,23 +30,32 @@
 
         <!--nav bar-->
         <nav class="navbar">
-            <a href="home.html" class="active">Home</a>
-            <a href="read.html">Read</a>
-            <a href="writeyourstory.html">Write Your Story</a>
-            <a href="help.html">Help</a>
-            <a href="myprofile.html">My Profile</a>
+            <a href="home.php">Home</a>
+            <a href="read.php" class="active">Read</a>
+            <a href="writeyourstory.php">Write Your Story</a>
+            <a href="help.php">Help</a>
+            <a href="myprofile.php">My Profile</a>
         </nav>
 
 
         <!--main content-->
-        <h1>Immerse yourself & <br/> let your imagination go wild.</h1>
-        <br/><br/>
-        <h2>Featured Stories</h2>
-        <!--featured books here-->
-        <a href="">
-            <button>
-                <img src="insert book here.png" alt="insert book here" width="150" height="200">
-            </button>
-        </a>
+        <div class="book-search-container">
+            <div class="book-search">
+                <i class="fa fa-search book-search-icon"></i>
+                <input type="text" 
+                       placeholder="What do you feel like reading today?">
+            </div>
+        </div>
+
+
+        <div>
+            <h2>Comedy</h2>
+            <!--clikable book button-->
+            <a href="">
+                <button>
+                    <img src="insert book here.png" alt="insert book here" width="150" height="200">
+                </button>
+            </a>
+        </div>
     </body>
 </html>

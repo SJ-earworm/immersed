@@ -31,11 +31,11 @@
 
         <!--nav bar-->
         <nav class="navbar">
-            <a href="home.html">Home</a>
-            <a href="read.html">Read</a>
-            <a href="writeyourstory.html">Write Your Story</a>
-            <a href="help.html" class="active">Help</a>
-            <a href="myprofile.html">My Profile</a>
+            <a href="home.php">Home</a>
+            <a href="read.php">Read</a>
+            <a href="writeyourstory.php">Write Your Story</a>
+            <a href="help.php" class="active">Help</a>
+            <a href="myprofile.php">My Profile</a>
         </nav>
 
 

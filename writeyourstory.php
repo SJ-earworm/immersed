@@ -31,11 +31,11 @@
 
         <!--nav bar-->
         <nav class="navbar">
-            <a href="home.html">Home</a>
-            <a href="read.html">Read</a>
-            <a href="writeyourstory.html" class="active">Write Your Story</a>
-            <a href="help.html">Help</a>
-            <a href="myprofile.html">My Profile</a>
+            <a href="home.php">Home</a>
+            <a href="read.php">Read</a>
+            <a href="writeyourstory.php" class="active">Write Your Story</a>
+            <a href="help.php">Help</a>
+            <a href="myprofile.php">My Profile</a>
         </nav>
 
 
@@ -43,7 +43,7 @@
         <h1>Write Your Story</h1>
         <!--starting new book-->
         <div class="wrapper">
-            <a href="editor.html">
+            <a href="editor.php">
                 <button class="book-button">Start a new book +</button>
             </a>
 

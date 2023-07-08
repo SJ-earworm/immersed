@@ -76,6 +76,3 @@ password.onkeyup = function() {
         length.classList.remove('valid');
     }
 }
-
-
-//validating if 'confirm password' value matches the password?

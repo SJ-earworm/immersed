@@ -71,7 +71,7 @@ h3 {
     text-decoration: none;
 }
 
-.settings-container {   /*come back here thx*/
+.settings-container {
     position: relative;
     margin-top: 40px;
     right: 16%;
@@ -106,6 +106,36 @@ h3 {
 .settings:hover {
     padding-right: 160px;
     background-color: gainsboro;
+}
+
+
+/*dropdown menu for settings*/
+.settings-dropdown-pos {
+    position: absolute;
+    display: block;
+    right: 100;
+}
+
+.settings-dropdown-content {
+    position: relative;
+    background-color: whitesmoke;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    display: none;
+    /*transition: 0.2s;*/
+}
+
+.settings-dropdown-content a {
+    padding: 16px;
+    color: rgb(29, 29, 29);
+    text-decoration: none;
+    display: block;
+}
+
+.reveal-settings-dropdown {
+    display: block;
+    /*transition: 0.2s;*/
 }
 
 button:hover {
@@ -178,7 +208,8 @@ input[type=text] {          /*styling the form text box*/
     box-sizing: border-box;
 }
 
-input[type=email] {         /*styling the form text box*/
+/*styling the form text box*/
+input[type=email] {
     padding: 10px;
     padding-left: 20px;
     padding-right: 80px;
@@ -188,7 +219,8 @@ input[type=email] {         /*styling the form text box*/
     box-sizing: border-box;
 }
 
-input[type=password] {      /*styling the form text box*/
+/*styling the form text box*/
+input[type=password] {
     padding: 10px;
     padding-left: 20px;
     padding-right: 80px;
@@ -204,7 +236,40 @@ input::placeholder {
 
 form {
     margin: 0 auto;
-    width: 250px;
+    width: 500px;
+}
+
+/*the container holding the password requirements*/
+#password-criteria {
+    display: none;     /*centering the entire element*/
+    margin: auto;       /*using display:table*/
+    margin-bottom: -32px;
+    padding: 20px;
+    position: relative;
+    text-align: left;
+    font-size: 13px;
+}
+
+/*adjusting spacing between the text*/
+#password-criteria p {
+    margin: 2px;
+}
+
+.valid {
+    color: green;
+}
+
+.valid::before {
+    position: relative;
+    content: "✔ ";
+}
+
+.invalid {
+    color: rgb(29, 29, 29);
+}
+
+.invalid::before {
+    position: relative;
 }
 
 

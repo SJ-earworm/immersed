@@ -32,61 +32,70 @@
 
         <!--nav bar-->
         <nav class="navbar">
-            <a href="home.html">Home</a>
-            <a href="read.html" class="active">Read</a>
-            <a href="writeyourstory.html">Write Your Story</a>
-            <a href="help.html">Help</a>
-            <a href="myprofile.html">My Profile</a>
+            <a href="home.php">Home</a>
+            <a href="read.php" class="active">Read</a>
+            <a href="writeyourstory.php">Write Your Story</a>
+            <a href="help.php">Help</a>
+            <a href="myprofile.php">My Profile</a>
         </nav>
 
 
         <!--main content-->
         <div class="book-search-container">
             <div class="book-search">
-                <i class="fa fa-search"></i>
-                <input type="text" 
-                       placeholder="What do you feel like reading today?">
+                <!--<form id="book-search-form">-->
+                    <i class="fa fa-search"></i>
+                    <input type="text" id="search-query" placeholder="What do you feel like reading today?" autocomplete="off">
+                <!--</form>-->
             </div>
         </div>
+
+        <!--displaying the search results-->
+        <div id="search-results"></div>
 
 
         <!--genre selection-->
         <div class="genre-selection-container">
-            <a href="romance.html">
+            <a href="romance.php">
                 <button class="genre-selection">
                     <h2>Romance</h2>
                 </button>
             </a>
 
-            <a href="comedy.html">
+            <a href="comedy.php">
                 <button class="genre-selection">
                     <h2>Comedy</h2>
                 </button>
             </a>
             
-            <a href="scifi.html">
+            <a href="scifi.php">
                 <button class="genre-selection">
                     <h2>Sci-Fi</h2>
                 </button>
             </a>
 
-            <a href="fantasy.html">
+            <a href="fantasy.php">
                 <button class="genre-selection">
                     <h2>Fantasy</h2>
                 </button>
             </a>
 
-            <a href="mystery.html">
+            <a href="mystery.php">
                 <button class="genre-selection">
                     <h2>Mystery</h2>
                 </button>
             </a>
 
-            <a href="other.html">
+            <a href="other.php">
                 <button class="genre-selection">
                     <h2>Other</h2>
                 </button>
             </a>
         </div>
+
+
+
+        <!--javascript-->
+        <script src="myScript.js"></script>
     </body>
 </html>

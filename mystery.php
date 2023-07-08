@@ -30,11 +30,11 @@
 
         <!--nav bar-->
         <nav class="navbar">
-            <a href="home.html">Home</a>
-            <a href="read.html" class="active">Read</a>
-            <a href="writeyourstory.html">Write Your Story</a>
-            <a href="help.html">Help</a>
-            <a href="myprofile.html">My Profile</a>
+            <a href="home.php">Home</a>
+            <a href="read.php" class="active">Read</a>
+            <a href="writeyourstory.php">Write Your Story</a>
+            <a href="help.php">Help</a>
+            <a href="myprofile.php">My Profile</a>
         </nav>
 
 
@@ -49,7 +49,7 @@
 
 
         <div>
-            <h2>Fantasy</h2>
+            <h2>Mystery</h2>
             <!--clikable book button-->
             <a href="">
                 <button>
