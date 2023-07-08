@@ -35,3 +35,9 @@
 <ul>
   <li>added some JavaScript</li>
 </ul>
+
+
+<h3>6th commit: Database</h3>
+<ul>
+  <li>added codes to generate the database</li>
+</ul>
