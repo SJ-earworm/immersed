@@ -52,3 +52,7 @@
         
         }
     }
+
+
+    //closing the connection
+    $conn->close();

@@ -123,7 +123,7 @@
 
                 
                 const apiKey = 'AIzaSyABwU0CFKVydyaZbI76gCT9HtErrCWgvoM'; //come back with ur key mem
-                const queryURL = `https://www.googleapis.com/books/v1/volumes?q=${encodeURIComponent(searchQuery)}&filter=full&key=${apiKey}`;
+                const queryURL = `https://www.googleapis.com/books/v1/volumes?q=${encodeURIComponent(searchQuery)}+inauthor&filter=full&key=${apiKey}`;
 
                 fetch(queryURL)
                     .then(response => response.json())

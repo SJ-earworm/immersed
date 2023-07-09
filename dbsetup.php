@@ -69,7 +69,7 @@
 
 
     //books table
-    $sql = "CREATE TABLE IF NOT EXISTS `books` (
+    /*$sql = "CREATE TABLE IF NOT EXISTS `books` (
         `ISBNcode` varchar(20) NOT NULL PRIMARY KEY,
         `genre` varchar(20) NOT NULL,
         `title` varchar(20) NOT NULL,
@@ -82,7 +82,7 @@
     }
     else {
         echo "Error creating table 'books': " . $conn->error;
-    }
+    }*/
 
 
 

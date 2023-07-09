@@ -47,8 +47,11 @@
                 <img src="profile pic.jpg" alt="insert profile picture" class="profile-pic">
             </div>
             <div>
-                <div style="font-size: 50px; padding-top: 29px; padding-left: 25px;">User's name here</div> <!--user's displayed name here-->
-                <div style="font-size: 20px; padding-left: 28px; padding-top: 9px">@usernamehere</div> <!--user's username here-->
+                <!--displaying user's info from the database-->
+                <div id="username" style="font-size: 50px; padding-top: 29px; padding-left: 25px;">
+                    <?php include 'dbmyprofile.php'; ?> <!--user's displayed name here-->
+                </div> 
+                <div id="account-type" style="font-size: 20px; padding-left: 28px; padding-top: 9px">@usernamehere</div> <!--user's username here-->
             </div>
 
             <!--allowing user to edit profile details-->

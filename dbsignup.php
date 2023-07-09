@@ -35,3 +35,7 @@
     else {
         echo "Error inserting data: " . $conn->error;
     }
+
+
+    //closing the connection
+    $conn->close();
