@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-    <div class="wrapper">
+        <div class="wrapper">
             <!--website logo-->
             <div id="logo">immersed</div>
 
@@ -25,8 +25,7 @@
                 </button>
                 <div class="settings-dropdown-pos">
                     <div id="clickDropdown" class="settings-dropdown-content">
-                        <a href="">dark mode</a>
-                        <a href="">log out</a>
+                        <a href="login.php">log out</a>
                     </div>
                 </div>
             </div>

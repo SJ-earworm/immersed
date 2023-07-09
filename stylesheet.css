@@ -196,7 +196,7 @@ button:hover {
 
 
 
-/*login.html & signup.html*/
+/*login.php & signup.php*/
 
 input[type=text] {          /*styling the form text box*/
     padding: 10px;
@@ -270,6 +270,16 @@ form {
 
 .invalid::before {
     position: relative;
+}
+
+a.sign-in-up{
+    text-decoration: none;
+    color: rgb(29, 29, 29);
+}
+
+.form-container {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -347,7 +357,7 @@ form {
 
 
 
-/*editor.html*/
+/*editor.php*/
 input[type=file] {  /*hiding the "premitive" button design*/
     display: none;
 }
@@ -379,7 +389,7 @@ textarea {
 
 
 
-/*help.html*/
+/*help.php*/
 
 details {
     position: relative;
@@ -412,7 +422,7 @@ p {
 
 
 
-/*myprofile.html*/
+/*myprofile.php*/
 
 .profile-pic-container {    /*profile picture frame for myprofile.html*/
     width: 140px;

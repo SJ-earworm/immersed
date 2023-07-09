@@ -20,9 +20,12 @@
     $email = $_POST['email'];
     $password = $_POST['password'];
 
+    //hashing the password
+    $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
+
     //when user creates new account
     //inserting user input into database
-    $sqlNewAccount = "INSERT INTO user (userName, email, password) VALUES ('$username', '$email', '$password');";
+    $sqlNewAccount = "INSERT INTO user (userName, email, password) VALUES ('$username', '$email', '$hashedPassword');";
     //vallidation
     if ($conn->query($sqlNewAccount) === TRUE) {
         echo 'Data inserted successfully <br/>';

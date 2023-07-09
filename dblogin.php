@@ -17,7 +17,7 @@
 
     //user variables
     $email = $_POST['email'];
-    $password = $_POST['password'];
+    $enteredPassword = $_POST['password'];
 
 
 
@@ -26,7 +26,7 @@
 
     //preparing a statement & binding user input to $username & $email
     $pst = $conn->prepare($sqlLogin);
-    $pst->bind_param("ss", $email, $password);
+    $pst->bind_param("ss", $email, $enteredPassword);
 
     //executing the statement
     $pst->execute();
@@ -38,10 +38,10 @@
     if ($result->num_rows > 0) {
         while ($dataRow = $result->fetch_assoc()) {
             $checkEmail = $dataRow["email"];
-            $checkPass = $dataRow["password"];
+            $checkHashedPass = $dataRow["password"];  //retrieving the hashed password from the database
 
             //direct the user to the home page if success, else ask user to try again
-            if ($email == $checkEmail && $password == $checkPass) {
+            if ($email == $checkEmail && password_verify($enteredPassword, $checkHashedPass)) { //comparing input with the hashed password
                 header("Location: home.php");
                 echo 'Data inserted into database';
             }

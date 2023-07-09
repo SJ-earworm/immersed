@@ -20,11 +20,16 @@
             <div id="logo">immersed</div>
 
             <!--settings button: imported-->
-            <div class="wrapper">
-                <div class="settings-container">
-                    <button class="settings">
-                        <i class="fa fa-gear"><span class="settings-title">settings</span></i>
-                    </button>
+            <div class="settings-container">
+                <!--<div class="settings-dropdown-pos">-->
+                <button onclick="settingsClickFunction()" class="settings">
+                    <i class="fa fa-gear"></i>
+                    <span class="settings-title">settings</span>
+                </button>
+                <div class="settings-dropdown-pos">
+                    <div id="clickDropdown" class="settings-dropdown-content">
+                        <a href="login.php">log out</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -49,5 +54,11 @@
                 <img src="insert book here.png" alt="insert book here" width="150" height="200">
             </button>
         </a>
+
+
+
+
+        <!--javascript-->
+        <script src="myScript.js"></script>
     </body>
 </html>

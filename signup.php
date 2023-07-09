@@ -37,6 +37,9 @@
             <button type="submit" id="disable-if-wrong" class="button" style="margin: 8px 0;" >Submit</button>
         </form>
 
+        <!--allow user to access sign up page-->
+        <a href="login.php" class="sign-in-up">Log in to an account</a>
+
         <!--do reset password if you can-->
 
 

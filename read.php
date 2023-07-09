@@ -21,11 +21,16 @@
             <div id="logo">immersed</div>
 
             <!--settings button: imported-->
-            <div class="wrapper">
-                <div class="settings-container">
-                    <button class="settings">
-                        <i class="fa fa-gear"><span class="settings-title">settings</span></i>
-                    </button>
+            <div class="settings-container">
+                <!--<div class="settings-dropdown-pos">-->
+                <button onclick="settingsClickFunction()" class="settings">
+                    <i class="fa fa-gear"></i>
+                    <span class="settings-title">settings</span>
+                </button>
+                <div class="settings-dropdown-pos">
+                    <div id="clickDropdown" class="settings-dropdown-content">
+                        <a href="login.php">log out</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -46,6 +51,7 @@
                 <!--<form id="book-search-form">-->
                     <i class="fa fa-search"></i>
                     <input type="text" id="search-query" placeholder="What do you feel like reading today?" autocomplete="off">
+                    <button id="search-button" class="button">Search</button>
                 <!--</form>-->
             </div>
         </div>
@@ -97,5 +103,82 @@
 
         <!--javascript-->
         <script src="myScript.js"></script>
+        <script>
+            //variables
+            const searchInput = document.getElementById('search-query');
+            const searchButton = document.getElementById('search-button');
+            const searchResults = document.getElementById('search-results');
+
+            //event listener to listen to the click on the search button
+            searchButton.addEventListener('click', bookSearch);
+
+            //function to query for the book
+            function bookSearch() {
+                const searchQuery = searchInput.value;
+
+                if (searchQuery.trim() === '') {
+                    searchResults.innerHTML = '<p>Please search for a book.</p>';
+                    return;
+                }
+
+                
+                const apiKey = 'AIzaSyABwU0CFKVydyaZbI76gCT9HtErrCWgvoM'; //come back with ur key mem
+                const queryURL = `https://www.googleapis.com/books/v1/volumes?q=${encodeURIComponent(searchQuery)}&filter=full&key=${apiKey}`;
+
+                fetch(queryURL)
+                    .then(response => response.json())
+                    .then(data => displayResults(data))
+                    .catch(error => {
+                        console.log(error)
+                        searchResults.innerHTML = '<p>An error occured while fetching the results</p>'
+                    });
+            }
+
+
+            //function to display the search results
+            function displayResults(data) {
+                //empty text on default
+                searchResults.innerHTML = '';
+
+                //indicate if search not found
+                if(data.totalItems === 0) {
+                    searchResults.innerHTML = '<p>No results found</p>';
+                    return;
+                }
+
+                //displaying the books
+                data.items.forEach(book => {
+                    const title = book.volumeInfo.title;
+                    const authors = book.volumeInfo.authors ? book.volumeInfo.authors.join(', ') : 'Unknown';
+                    const description = book.volumeInfo.description || 'No description available';
+                    const coverPhoto = book.volumeInfo.imageLinks ? book.volumeInfo.imageLinks.thumbnail : '';
+
+                    const bookResult = document.createElement('div');
+                    bookResult.innerHTML = `
+                        <h3>${title}</h3>
+                        <p>Authors: ${authors}</p>
+                        <p>Description: ${description}</p>
+                        <img src="${coverPhoto}" alt="${title} thumbnail"><br/><br/>
+                        <button class="button" onclick="openBook('${getVolumeID(book)}')">Read</button><br/><br/>
+                    `;
+                        
+                    searchResults.appendChild(bookResult);
+                });
+
+            }
+
+
+            //function to retrieve the book ISBN
+            function getVolumeID(volumeInfo) {
+                return volumeInfo.id || 'Could not find the volume ID';
+            }
+
+
+            //function to open the book in book.php
+            function openBook(volumeID) {
+                const url = `book.php?volumeId=${volumeID}`;
+                window.location.href = url;
+            }
+        </script>
     </body>
 </html>
