@@ -41,3 +41,10 @@
 <ul>
   <li>added codes to generate the database</li>
 </ul>
+
+
+<h3>7th commit: Google Books API + password hashing</h3>
+<ul>
+  <li>embedded Google Books API to search and read books with the Embedded Viewer API</li>
+  <li>added a feature to hash passwords</li>
+</ul>
