@@ -115,5 +115,5 @@
 <h3>Website-wide weaknesses</h3>
 <ul>
   <li>Responsiveness not configured</li>
-  <li>Alignment of elements were pushed slightly to the left after JavaScript was added. Problem not yet solved</li>
+  <li>Alignment of the website logo and settings button were pushed slightly to the left after JavaScript was added. Problem not yet solved</li>
 </ul>
